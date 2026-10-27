@@ -28,5 +28,6 @@
     "typescript": "~6.0.3",
     "vite": "^8.3.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://learning-react-native-blush.vercel.app"
 }

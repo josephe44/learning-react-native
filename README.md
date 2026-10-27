@@ -19,7 +19,11 @@
 
 <br />
 
-[**Take the tour**](#take-the-tour) · [**What's inside**](#whats-inside) · [**Quick start**](#quick-start) · [**All 27 lessons**](#the-27-lessons) · [**Contribute**](#adding-content)
+<a href="https://learning-react-native-blush.vercel.app"><img src="https://img.shields.io/badge/Open_the_live_site-learning--react--native--blush.vercel.app-3347e0?style=for-the-badge&logo=vercel&logoColor=white" alt="Open the live site" /></a>
+
+<br />
+
+[**Live demo**](https://learning-react-native-blush.vercel.app) · [**Take the tour**](#take-the-tour) · [**What's inside**](#whats-inside) · [**Quick start**](#quick-start) · [**All 27 lessons**](#the-27-lessons) · [**Contribute**](#adding-content)
 
 <br />
 
@@ -222,7 +226,9 @@ On small screens the site becomes an app: a floating tab bar that tucks away as 
 
 ## Quick start
 
-You need **Node.js 20.19+ or 22.12+** (developed on Node 24) and npm.
+Just want to look around? **[Open the live site](https://learning-react-native-blush.vercel.app)**. Nothing to install.
+
+To run it yourself, you need **Node.js 20.19+ or 22.12+** (developed on Node 24) and npm.
 
 ```bash
 # 1. get the code
@@ -394,7 +400,6 @@ If you spot something wrong, please open an issue. Corrections are the most usef
 - Richer one-line summaries for the later lessons
 - A Kotlin and Jetpack Compose track to mirror the Swift one
 - Deep links from the map to a specific demo inside a lesson
-- A hosted version
 
 <br />
 
