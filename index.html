@@ -3,16 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>React Native Internals</title>
+
+    <!-- Primary SEO -->
+    <title>React Native Internals | Interactive Guide to How It Works</title>
     <meta
       name="description"
-      content="An interactive visual guide to how React Native works under the hood, with a Swift and SwiftUI track for React Native engineers."
+      content="Learn how React Native works under the hood with 27 interactive lessons on Hermes, JSI, Fabric, Turbo Modules and Metro, plus a Swift and SwiftUI track."
     />
+    <meta
+      name="keywords"
+      content="react native internals, react native architecture, JSI, Fabric, Turbo Modules, Hermes, Metro, Codegen, new architecture, bridgeless, swift for react native developers, swiftui, learn swift, interactive tutorial"
+    />
+    <meta name="author" content="React Native Internals contributors" />
+    <meta name="application-name" content="React Native Internals" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://learning-react-native-blush.vercel.app/" />
     <meta name="theme-color" content="#0d1220" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- Open Graph (Facebook, LinkedIn, Slack, Discord, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="React Native Internals" />
+    <meta property="og:title" content="React Native Internals: an interactive visual guide" />
+    <meta
+      property="og:description"
+      content="27 hands-on lessons on JSI, Fabric, Hermes, Turbo Modules and Metro, a map that connects them all, and a Swift and SwiftUI track for React Native engineers."
+    />
+    <meta property="og:url" content="https://learning-react-native-blush.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://learning-react-native-blush.vercel.app/og-image.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="React Native Internals: three stacked layers in yellow, blue and green next to the title and the words interactive visual guide"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="React Native Internals: an interactive visual guide" />
+    <meta
+      name="twitter:description"
+      content="See how JSI, Fabric, Hermes and Metro really work, then learn Swift and SwiftUI. 27 interactive lessons."
+    />
+    <meta
+      name="twitter:image"
+      content="https://learning-react-native-blush.vercel.app/og-image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="React Native Internals: three stacked layers in yellow, blue and green next to the title"
+    />
+
+    <!-- Icons and app manifest -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="RN Internals" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://learning-react-native-blush.vercel.app/#website",
+            "url": "https://learning-react-native-blush.vercel.app/",
+            "name": "React Native Internals",
+            "description": "An interactive visual guide to how React Native works under the hood, with a Swift and SwiftUI track for React Native engineers.",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "LearningResource",
+            "@id": "https://learning-react-native-blush.vercel.app/#guide",
+            "name": "React Native Internals",
+            "description": "27 interactive lessons on how React Native works: the JavaScript engine, JSI, Fabric, Turbo Modules, Codegen, Metro, animations, gestures, lists and more, plus a Swift and SwiftUI learning track.",
+            "url": "https://learning-react-native-blush.vercel.app/",
+            "image": "https://learning-react-native-blush.vercel.app/og-image.png",
+            "inLanguage": "en",
+            "isAccessibleForFree": true,
+            "learningResourceType": "interactive resource",
+            "interactivityType": "active",
+            "educationalLevel": "Intermediate",
+            "audience": { "@type": "Audience", "audienceType": "React Native developers" },
+            "teaches": [
+              "React Native architecture",
+              "JavaScript Interface (JSI)",
+              "Fabric renderer",
+              "Turbo Modules",
+              "Hermes JavaScript engine",
+              "Metro bundler",
+              "Swift",
+              "SwiftUI"
+            ],
+            "license": "https://opensource.org/licenses/MIT",
+            "isPartOf": { "@id": "https://learning-react-native-blush.vercel.app/#website" }
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "name": "React Native Internals",
+            "codeRepository": "https://github.com/josephe44/learning-react-native",
+            "programmingLanguage": "TypeScript",
+            "license": "https://opensource.org/licenses/MIT",
+            "url": "https://learning-react-native-blush.vercel.app/"
+          }
+        ]
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +127,115 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main
+        style="
+          font-family: system-ui, sans-serif;
+          max-width: 720px;
+          margin: 0 auto;
+          padding: 32px 20px;
+          line-height: 1.6;
+          color: #e9edf9;
+          background: #0d1220;
+        "
+      >
+        <h1>React Native Internals</h1>
+        <p>
+          An interactive visual guide to how React Native works under the hood: 27 hands-on lessons,
+          a connection map, a Swift and SwiftUI track for React Native engineers, and a todo app
+          built twice (React Native with Expo, and Swift with SwiftUI). This site needs JavaScript
+          to run its interactive demos.
+        </p>
+        <h2>The 27 lessons</h2>
+        <ol style="list-style: none; padding: 0">
+          <li>
+            <strong>1. Big Picture</strong>: React Native runs your JavaScript, but draws real
+            native views — three worlds talking to each other across threads.
+          </li>
+          <li>
+            <strong>2. JavaScript Engine</strong>: A tiny JS engine inside your app runs your code.
+            Hermes precompiles it so startup is fast.
+          </li>
+          <li>
+            <strong>3. The Old Bridge</strong>: JS and native used to pass JSON letters through a
+            single async mailbox — slow when traffic spikes.
+          </li>
+          <li>
+            <strong>4. JSI</strong>: JSI lets JavaScript hold direct references to C++ objects, so
+            calls are synchronous and need no JSON.
+          </li>
+          <li>
+            <strong>5. Turbo Modules</strong>: Native modules, but lazy-loaded, typed, and callable
+            through JSI.
+          </li>
+          <li>
+            <strong>6. Codegen</strong>: You write a typed spec once; build tools generate the
+            C++/ObjC/Kotlin glue that keeps both sides in sync.
+          </li>
+          <li>
+            <strong>7. Fabric</strong>: The renderer: React output → immutable shadow tree → commit
+            → mount real native views.
+          </li>
+          <li>
+            <strong>8. Layout Engine</strong>: Yoga computes flexbox positions in C++ on the shadow
+            tree.
+          </li>
+          <li>
+            <strong>9. React Reconciler</strong>: Fiber decides what changed and schedules updates
+            by priority.
+          </li>
+          <li>
+            <strong>10. Event System</strong>: How a finger touch travels from native to your
+            onPress.
+          </li>
+          <li>
+            <strong>11. Bridgeless Mode</strong>: The bridge is gone entirely; ReactHost owns the
+            runtime.
+          </li>
+          <li>
+            <strong>12. Bundling &amp; Metro</strong>: Metro turns your files into one bundle and
+            hot-swaps edits.
+          </li>
+          <li><strong>13. App Startup</strong>: From icon tap to first screen, step by step.</li>
+          <li>
+            <strong>14. Platform: iOS</strong>: AppDelegate, Obj-C++ glue, UIKit views, CocoaPods.
+          </li>
+          <li>
+            <strong>15. Platform: Android</strong>: ReactActivity, JNI/fbjni, Android Views, Gradle.
+          </li>
+          <li>
+            <strong>16. Animations</strong>: Animated, native driver, LayoutAnimation, Reanimated
+            worklets.
+          </li>
+          <li><strong>17. Gesture Handling</strong>: Native recognizers beat JS responders.</li>
+          <li><strong>18. Lists &amp; Virtualization</strong>: Only render what is on screen.</li>
+          <li>
+            <strong>19. Text Rendering</strong>: Attributed strings measured by platform text
+            engines.
+          </li>
+          <li><strong>20. Images &amp; Assets</strong>: Asset resolution, loading, caching.</li>
+          <li><strong>21. Networking &amp; Storage</strong>: fetch, WebSockets, Blobs, storage.</li>
+          <li>
+            <strong>22. Memory &amp; Performance</strong>: Where memory lives and where frames drop.
+          </li>
+          <li><strong>23. Debugging Tooling</strong>: DevTools, CDP, LogBox, inspector.</li>
+          <li><strong>24. Error Handling</strong>: How errors cross the layers.</li>
+          <li>
+            <strong>25. Build &amp; Release</strong>: Release bundles, bytecode, source maps, OTA.
+          </li>
+          <li>
+            <strong>26. Extending RN</strong>: Native modules, components, C++, other platforms.
+          </li>
+          <li><strong>27. Ecosystem Layer</strong>: Expo, CLIs, autolinking.</li>
+        </ol>
+        <p>
+          Source code on
+          <a href="https://github.com/josephe44/learning-react-native" style="color: #8fa0ff"
+            >GitHub</a
+          >.
+        </p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

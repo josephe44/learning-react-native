@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://learning-react-native-blush.vercel.app/sitemap.xml

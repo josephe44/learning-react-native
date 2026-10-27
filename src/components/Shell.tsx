@@ -85,6 +85,30 @@ function NavIcon({ name }: { name: string }) {
   )
 }
 
+const SITE = 'React Native Internals'
+const DEFAULT_TITLE = `${SITE} | Interactive Guide to How It Works`
+const pageMeta: Record<string, { title: string; description: string }> = {
+  map: {
+    title: `How it all connects | ${SITE}`,
+    description:
+      'An interactive map of all 27 React Native internals topics. See how JSI, Fabric, Turbo Modules, Hermes and Metro depend on each other.',
+  },
+  swift: {
+    title: `Swift and SwiftUI for React Native engineers | ${SITE}`,
+    description:
+      'Learn Swift and SwiftUI if you already know React Native: side-by-side translations, a learning path, components, projects, tools and style.',
+  },
+  todo: {
+    title: `Build a todo app twice: React Native vs SwiftUI | ${SITE}`,
+    description:
+      'Build the same todo app in eleven steps with React Native and Expo, and with Swift and SwiftUI. Compare code, persistence, tests and shipping.',
+  },
+}
+
+function setMeta(selector: string, attr: string, value: string) {
+  document.querySelector(selector)?.setAttribute(attr, value)
+}
+
 const nextTheme: Record<Theme, Theme> = {
   system: 'light',
   light: 'dark',
@@ -154,6 +178,16 @@ export default function Shell() {
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  useEffect(() => {
+    const sec = curriculum.find(x => x.id === cur)
+    const m = sec ? { title: `${sec.title} | ${SITE}`, description: sec.tldr } : pageMeta[cur]
+    const title = m?.title ?? DEFAULT_TITLE
+    document.title = title
+    if (m) setMeta('meta[name="description"]', 'content', m.description)
+    setMeta('meta[property="og:title"]', 'content', title)
+    setMeta('meta[name="twitter:title"]', 'content', title)
+  }, [cur])
 
   const ready = curriculum.filter(x => x.ready)
   const pct = (visited.filter(v => ready.some(r => r.id === v)).length / ready.length) * 100

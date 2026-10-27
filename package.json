@@ -29,5 +29,30 @@
     "vite": "^8.3.4"
   },
   "license": "MIT",
-  "homepage": "https://learning-react-native-blush.vercel.app"
+  "homepage": "https://learning-react-native-blush.vercel.app",
+  "description": "Interactive visual guide to how React Native works under the hood: 27 lessons on JSI, Fabric, Hermes, Turbo Modules and Metro, a connection map, and a Swift and SwiftUI track.",
+  "keywords": [
+    "react-native",
+    "react-native-internals",
+    "new-architecture",
+    "jsi",
+    "fabric",
+    "turbo-modules",
+    "hermes",
+    "metro",
+    "swift",
+    "swiftui",
+    "interactive-learning",
+    "education",
+    "react",
+    "typescript",
+    "vite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephe44/learning-react-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/josephe44/learning-react-native/issues"
+  }
 }

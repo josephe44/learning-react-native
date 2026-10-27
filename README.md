@@ -16,6 +16,8 @@
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-animations-20232a?style=flat-square&logo=framer&logoColor=white)
 ![Prettier](https://img.shields.io/badge/code_style-prettier-20232a?style=flat-square&logo=prettier&logoColor=f7b93e)
 ![Works on phones](https://img.shields.io/badge/works_on-phones-20232a?style=flat-square)
+![License: MIT](https://img.shields.io/github/license/josephe44/learning-react-native?style=flat-square&color=20232a&labelColor=20232a)
+![GitHub stars](https://img.shields.io/github/stars/josephe44/learning-react-native?style=flat-square&color=20232a&labelColor=20232a&logo=github)
 
 <br />
 
@@ -232,7 +234,7 @@ To run it yourself, you need **Node.js 20.19+ or 22.12+** (developed on Node 24)
 
 ```bash
 # 1. get the code
-git clone <your-repo-url>
+git clone https://github.com/josephe44/learning-react-native.git
 cd learning-react-native
 
 # 2. install
