@@ -11,7 +11,7 @@
 <br />
 
 ![React](https://img.shields.io/badge/React-19-20232a?style=flat-square&logo=react&logoColor=61dafb)
-![TypeScript](https://img.shields.io/badge/TypeScript-strict-20232a?style=flat-square&logo=typescript&logoColor=3178c6)
+![TypeScript](https://img.shields.io/badge/TypeScript-typed-20232a?style=flat-square&logo=typescript&logoColor=3178c6)
 ![Vite](https://img.shields.io/badge/Vite-8-20232a?style=flat-square&logo=vite&logoColor=a78bfa)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-animations-20232a?style=flat-square&logo=framer&logoColor=white)
 ![Prettier](https://img.shields.io/badge/code_style-prettier-20232a?style=flat-square&logo=prettier&logoColor=f7b93e)
@@ -125,35 +125,35 @@ Open any row to see what you can do in that lesson. They run in a sensible order
 
 <br />
 
-| #   | Lesson                | Try this                                                                                        |
-| --- | --------------------- | ----------------------------------------------------------------------------------------------- |
-| 1   | **Big Picture**       | Toggle Old and New architecture, send a tap down the stack, step one tap across the threads     |
-| 2   | **JavaScript Engine** | Race Hermes against JavaScriptCore at startup, run a garbage collection pass                    |
-| 3   | **The Old Bridge**    | Clog the bridge with 25 messages and inspect the JSON on the wire                               |
-| 4   | **JSI**               | Race a bridge call against a JSI call, hover the HostObject to HostFunction chain               |
-| 5   | **Turbo Modules**     | Compare eager and lazy module loading, try sync and async methods                               |
-| 6   | **Codegen**           | See a spec become C++, Objective-C and Kotlin, then break a type and trigger a build error      |
-| 7   | **Fabric**            | Step Render, Commit, Mount, clone the shadow tree, toggle view flattening                       |
-| 8   | **Layout Engine**     | Flexbox playground and a text-measuring slider                                                  |
-| 9   | **React Reconciler**  | Walk the Fiber tree, interrupt a transition with an urgent update, compare batching             |
-| 10  | **Event System**      | Follow a tap through capture, target and bubble                                                 |
-| 11  | **Bridgeless Mode**   | Remove the bridge, add tasks to the RuntimeScheduler by priority                                |
+| #   | Lesson                | Try this                                                                                             |
+| --- | --------------------- | ---------------------------------------------------------------------------------------------------- |
+| 1   | **Big Picture**       | Toggle Old and New architecture, send a tap down the stack, step one tap across the threads          |
+| 2   | **JavaScript Engine** | Race Hermes against JavaScriptCore at startup, run a garbage collection pass                         |
+| 3   | **The Old Bridge**    | Clog the bridge with 25 messages and inspect the JSON on the wire                                    |
+| 4   | **JSI**               | Race a bridge call against a JSI call, hover the HostObject to HostFunction chain                    |
+| 5   | **Turbo Modules**     | Compare eager and lazy module loading, try sync and async methods                                    |
+| 6   | **Codegen**           | See a spec become C++, Objective-C and Kotlin, then break a type and trigger a build error           |
+| 7   | **Fabric**            | Step Render, Commit, Mount, clone the shadow tree, toggle view flattening                            |
+| 8   | **Layout Engine**     | Flexbox playground and a text-measuring slider                                                       |
+| 9   | **React Reconciler**  | Walk the Fiber tree, interrupt a transition with an urgent update, compare batching                  |
+| 10  | **Event System**      | Follow a tap through capture, target and bubble                                                      |
+| 11  | **Bridgeless Mode**   | Remove the bridge, add tasks to the RuntimeScheduler by priority                                     |
 | 12  | **Bundling & Metro**  | Step through resolve, transform and serialize, see what Fast Refresh re-runs, toggle inline requires |
-| 13  | **App Startup**       | Scrub through the launch timeline from process start to first screen                            |
-| 14  | **Platform: iOS**     | Follow `main()` to your first view, apply UIKit mutations                                       |
-| 15  | **Platform: Android** | Application to Views, map Java types through JNI, run a Gradle build                            |
-| 16  | **Animations**        | Block the JS thread and watch the native driver keep going, LayoutAnimation, Reanimated worklets |
-| 17  | **Gesture Handling**  | Compare responder and Gesture Handler paths, drive a gesture state machine, compose gestures    |
-| 18  | **Lists**             | Scroll a windowed list, see cell recycling save views                                           |
-| 19  | **Text Rendering**    | Toggle styles and see the attributed string, resize text and watch it reflow                    |
-| 20  | **Images & Assets**   | Pick a pixel ratio, load an image twice to see caching, calculate decoded memory                |
-| 21  | **Networking**        | Trace `fetch`, drive a WebSocket, compare Blob handles with base64, compare storage options     |
-| 22  | **Memory**            | Allocate in three worlds, cause a leak, raise frame cost until frames drop                      |
-| 23  | **Debugging**         | Read real CDP messages, compare LogBox and RedBox, inspect a view                               |
-| 24  | **Error Handling**    | Choose where an error starts and see what catches it                                            |
-| 25  | **Build & Release**   | Source to bytecode, symbolicate a crash, see when an OTA update applies                         |
-| 26  | **Extending RN**      | Pick what to build, swap the platform layer under React                                         |
-| 27  | **Ecosystem**         | Community CLI vs Expo CLI, Expo Modules, autolinking                                            |
+| 13  | **App Startup**       | Scrub through the launch timeline from process start to first screen                                 |
+| 14  | **Platform: iOS**     | Follow `main()` to your first view, apply UIKit mutations                                            |
+| 15  | **Platform: Android** | Application to Views, map Java types through JNI, run a Gradle build                                 |
+| 16  | **Animations**        | Block the JS thread and watch the native driver keep going, LayoutAnimation, Reanimated worklets     |
+| 17  | **Gesture Handling**  | Compare responder and Gesture Handler paths, drive a gesture state machine, compose gestures         |
+| 18  | **Lists**             | Scroll a windowed list, see cell recycling save views                                                |
+| 19  | **Text Rendering**    | Toggle styles and see the attributed string, resize text and watch it reflow                         |
+| 20  | **Images & Assets**   | Pick a pixel ratio, load an image twice to see caching, calculate decoded memory                     |
+| 21  | **Networking**        | Trace `fetch`, drive a WebSocket, compare Blob handles with base64, compare storage options          |
+| 22  | **Memory**            | Allocate in three worlds, cause a leak, raise frame cost until frames drop                           |
+| 23  | **Debugging**         | Read real CDP messages, compare LogBox and RedBox, inspect a view                                    |
+| 24  | **Error Handling**    | Choose where an error starts and see what catches it                                                 |
+| 25  | **Build & Release**   | Source to bytecode, symbolicate a crash, see when an OTA update applies                              |
+| 26  | **Extending RN**      | Pick what to build, swap the platform layer under React                                              |
+| 27  | **Ecosystem**         | Community CLI vs Expo CLI, Expo Modules, autolinking                                                 |
 
 </details>
 
@@ -175,14 +175,14 @@ The map answers a question the individual lessons cannot: _how do all of these f
 
 A dedicated page for React Native engineers who want to learn Swift and SwiftUI. Content was checked against the official Swift book (Swift 6.4) and Apple's SwiftUI and SwiftData documentation.
 
-| Tab               | What you get                                                                                                              |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Translate**     | 14 React-to-SwiftUI pairs and 11 TypeScript-to-Swift pairs, side by side, each with a "what to notice" note               |
+| Tab               | What you get                                                                                                                |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Translate**     | 14 React-to-SwiftUI pairs and 11 TypeScript-to-Swift pairs, side by side, each with a "what to notice" note                 |
 | **Learning path** | 9 stages and 55 topics, from `let` and `var` to TestFlight. Tick topics off as you go, each shows its React Native analogue |
-| **Components**    | 12 components to build by hand, from a button style to a draggable card, each with working starter code                   |
-| **Projects**      | 6 projects from a weekend tip splitter to an expense tracker capstone, each with milestones                               |
-| **Tools**         | What replaces npm, Metro, Jest, Flipper and EAS in the Swift world, plus a setup checklist                                |
-| **Style**         | 8 avoid and prefer Swift habits, a live demo of why modifier order matters, and design rules for a native feel            |
+| **Components**    | 12 components to build by hand, from a button style to a draggable card, each with working starter code                     |
+| **Projects**      | 6 projects from a weekend tip splitter to an expense tracker capstone, each with milestones                                 |
+| **Tools**         | What replaces npm, Metro, Jest, Flipper and EAS in the Swift world, plus a setup checklist                                  |
+| **Style**         | 8 avoid and prefer Swift habits, a live demo of why modifier order matters, and design rules for a native feel              |
 
 <br />
 
@@ -190,19 +190,19 @@ A dedicated page for React Native engineers who want to learn Swift and SwiftUI.
 
 Eleven steps, from an empty project to TestFlight. Each step shows both versions next to each other.
 
-|     | Step                  | React Native + Expo           | Swift + SwiftUI                    |
-| --- | --------------------- | ----------------------------- | ---------------------------------- |
-| 1   | Create the project    | `create-expo-app`             | Xcode new project                  |
-| 2   | Model the data        | A TypeScript type             | An `@Observable` class             |
-| 3   | Show a list           | `FlatList`                    | `List`                             |
-| 4   | Add todos             | `useState` and `TextInput`    | `@State` and `TextField`           |
-| 5   | Complete and delete   | Immutable updates             | In-place changes and `.onDelete`   |
-| 6   | Split into components | `TodoItem` and `useTodos`     | `TodoRow`                          |
-| 7   | Filter the list       | Hand-built chips              | Segmented `Picker`                 |
-| 8   | Save on the device    | AsyncStorage and effects      | SwiftData `@Model` and `@Query`    |
-| 9   | Polish                | Reanimated and haptics        | `.animation` and `.sensoryFeedback` |
-| 10  | Test it               | Jest and Testing Library      | Swift Testing                      |
-| 11  | Ship it               | EAS Build and Submit          | Archive to TestFlight              |
+|     | Step                  | React Native + Expo        | Swift + SwiftUI                     |
+| --- | --------------------- | -------------------------- | ----------------------------------- |
+| 1   | Create the project    | `create-expo-app`          | Xcode new project                   |
+| 2   | Model the data        | A TypeScript type          | An `@Observable` class              |
+| 3   | Show a list           | `FlatList`                 | `List`                              |
+| 4   | Add todos             | `useState` and `TextInput` | `@State` and `TextField`            |
+| 5   | Complete and delete   | Immutable updates          | In-place changes and `.onDelete`    |
+| 6   | Split into components | `TodoItem` and `useTodos`  | `TodoRow`                           |
+| 7   | Filter the list       | Hand-built chips           | Segmented `Picker`                  |
+| 8   | Save on the device    | AsyncStorage and effects   | SwiftData `@Model` and `@Query`     |
+| 9   | Polish                | Reanimated and haptics     | `.animation` and `.sensoryFeedback` |
+| 10  | Test it               | Jest and Testing Library   | Swift Testing                       |
+| 11  | Ship it               | EAS Build and Submit       | Archive to TestFlight               |
 
 The **Final code** tab shows every finished file for both versions, and **Compare** puts persistence, haptics, tests and platform reach next to each other, including where React Native is the better choice.
 
@@ -222,7 +222,7 @@ On small screens the site becomes an app: a floating tab bar that tucks away as 
 
 ## Quick start
 
-You need **Node.js 20.19 or newer** (developed on Node 24) and npm.
+You need **Node.js 20.19+ or 22.12+** (developed on Node 24) and npm.
 
 ```bash
 # 1. get the code
@@ -243,14 +243,14 @@ Open the address Vite prints (usually `http://localhost:5173`). Pages live at `/
 
 <br />
 
-| Command                | What it does                                    |
-| ---------------------- | ----------------------------------------------- |
-| `npm run dev`          | Start the dev server with hot reload            |
-| `npm run build`        | Type-check with `tsc`, then build to `dist/`    |
-| `npm run preview`      | Serve the production build locally              |
-| `npm run lint`         | Lint with oxlint                                |
-| `npm run format`       | Format everything with Prettier                 |
-| `npm run format:check` | Check formatting without changing files         |
+| Command                | What it does                                 |
+| ---------------------- | -------------------------------------------- |
+| `npm run dev`          | Start the dev server with hot reload         |
+| `npm run build`        | Type-check with `tsc`, then build to `dist/` |
+| `npm run preview`      | Serve the production build locally           |
+| `npm run lint`         | Lint with oxlint                             |
+| `npm run format`       | Format everything with Prettier              |
+| `npm run format:check` | Check formatting without changing files      |
 
 The site uses hash routing, so `dist/` can be hosted on any static host with no server rewrites.
 
