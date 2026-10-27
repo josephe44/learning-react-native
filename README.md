@@ -400,7 +400,11 @@ If you spot something wrong, please open an issue. Corrections are the most usef
 
 ## License
 
-No license has been chosen yet. Add a `LICENSE` file before sharing or accepting contributions.
+This project is released under the [MIT License](LICENSE). You are free to use, copy, modify and share it, including in your own courses and teaching material, as long as the license notice stays with it.
+
+**Contributing:** by opening a pull request you agree that your contribution is licensed under the same MIT License.
+
+The Google Fonts used by the site (Bricolage Grotesque, Instrument Sans and JetBrains Mono) are loaded from Google and keep their own open-source licenses. Dependencies keep theirs too.
 
 <br />
 
